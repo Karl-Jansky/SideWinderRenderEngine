@@ -43,11 +43,11 @@ int main(int argc, char **argv)
             }
         }
 
-        SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
         SDL_RenderClear(renderer);
 
-        // Set the draw color to red
-        SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+        // Set the draw color of the line
+        SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
 
         // Draw a line from (100, 100) to (700, 500)
         SDL_RenderDrawLine(renderer, 100, 100, 700, 500);
