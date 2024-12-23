@@ -1,0 +1,32 @@
+﻿  Installing vcpkg dependencies to E:\WORK\Dev\SideWinderRenderEngine\SideWinderRenderEngine\vcpkg_installed\x64-windows\
+  "D:\Applications\VisualStudio\VC\vcpkg\vcpkg.exe" install  --x-wait-for-lock --triplet "x64-windows" --vcpkg-root "D:\Applications\VisualStudio\VC\vcpkg\\" "--x-manifest-root=E:\WORK\Dev\SideWinderRenderEngine\SideWinderRenderEngine\\" "--x-install-root=E:\WORK\Dev\SideWinderRenderEngine\SideWinderRenderEngine\vcpkg_installed\x64-windows\\" 
+  Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
+  Detecting compiler hash for triplet x64-windows...
+  Compiler found: D:/Applications/VisualStudio/VC/Tools/MSVC/14.42.34433/bin/Hostx64/x64/cl.exe
+  The following packages will be built and installed:
+      sdl2:x64-windows@2.30.7 -- C:\Users\alato_wdudmiv\AppData\Local\vcpkg\registries\git-trees\bb45dd91a3494bfe75458c6ad2233e501367791e
+    * vcpkg-cmake:x64-windows@2024-04-23 -- C:\Users\alato_wdudmiv\AppData\Local\vcpkg\registries\git-trees\e74aa1e8f93278a8e71372f1fa08c3df420eb840
+    * vcpkg-cmake-config:x64-windows@2024-05-23 -- C:\Users\alato_wdudmiv\AppData\Local\vcpkg\registries\git-trees\97a63e4bc1a17422ffe4eff71da53b4b561a7841
+  Additional packages (*) will be modified to complete this operation.
+  Restored 3 package(s) from C:\Users\alato_wdudmiv\AppData\Local\vcpkg\archives in 324 ms. Use --debug to see more details.
+  Installing 1/3 vcpkg-cmake-config:x64-windows@2024-05-23...
+  Elapsed time to handle vcpkg-cmake-config:x64-windows: 7.78 ms
+  vcpkg-cmake-config:x64-windows package ABI: 570e1dd7efc49babc748bc5fba1a4cb29f70439a63091222d3ae5c665a4a16fd
+  Installing 2/3 vcpkg-cmake:x64-windows@2024-04-23...
+  Elapsed time to handle vcpkg-cmake:x64-windows: 7.98 ms
+  vcpkg-cmake:x64-windows package ABI: 34f408d1b3b27468e944db2e76080e0e1195e2b195fa54f61a03e8eed43c6f48
+  Installing 3/3 sdl2:x64-windows@2.30.7...
+  Elapsed time to handle sdl2:x64-windows: 55.6 ms
+  sdl2:x64-windows package ABI: 48f541497dd87aa32a19e98fea424eb7d07ac882da9bd21ba0f2fc1839323c7d
+  Total install time: 71.5 ms
+  sdl2 provides CMake targets:
+  
+      find_package(SDL2 CONFIG REQUIRED)
+      target_link_libraries(main
+          PRIVATE
+          $<TARGET_NAME_IF_EXISTS:SDL2::SDL2main>
+          $<IF:$<TARGET_EXISTS:SDL2::SDL2>,SDL2::SDL2,SDL2::SDL2-static>
+      )
+  
+  SideWinderRenderEngine.cpp
+  SideWinderRenderEngine.vcxproj -> E:\WORK\Dev\SideWinderRenderEngine\SideWinderRenderEngine\x64\Debug\SideWinderRenderEngine.exe
